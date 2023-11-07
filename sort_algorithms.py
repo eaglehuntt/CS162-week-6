@@ -5,6 +5,10 @@ class Sort:
     
     @staticmethod
     def merge_sort(array):
+        """
+        Time complexity: O(nLogn)
+        Space complexity: O(n)
+        """
 
         def merge(a,b):
             c = []
@@ -40,7 +44,3 @@ class Sort:
 
 
         return merge(a, b)
-
-
-
-print(Sort.merge_sort([1,8,5,4,2,4,2,4,5,6,7,8]))
